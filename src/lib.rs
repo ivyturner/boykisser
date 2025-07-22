@@ -57,6 +57,8 @@
 // Unwraps are a bad practice and do not provide useful error messages/handling.
 #![warn(clippy::unwrap_used)]
 
+#![allow(clippy::cargo_common_metadata)]
+
 use std::fmt;
 
 #[cfg(feature = "art")]

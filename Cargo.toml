@@ -4,7 +4,7 @@ version = "1.0.0"
 edition = "2024"
 repository = "https://github.com/ofluffydev/boykisser"
 keywords = ["ascii", "art", "boykisser", "compile-time", "images"]
-categories = ["art"]
+categories = []
 description = "A collection of compile time ASCII art and images, especially boykisser."
 license = "MIT OR Apache-2.0"
 
