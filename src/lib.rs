@@ -193,7 +193,7 @@ macro_rules! create_asset_registry {
             }
 
             /// List all text assets in this registry
-            #[must_use] pub const fn list_text_assets() -> Vec<&'static $crate::TextAssetInfo> {
+            #[must_use] pub fn list_text_assets() -> Vec<&'static $crate::TextAssetInfo> {
                 vec![
                     $(
                         paste::paste! { &[<$text_name _INFO>] },
@@ -243,21 +243,6 @@ pub mod images {
         description: "Company logo in SVG format",
     };
 }
-
-// Example of using the registry macro
-create_asset_registry!(
-    default_assets,
-    [
-        // Binary assets would reference real files:
-        // (FAVICON, "assets/favicon.ico", "ICO", "Website favicon"),
-        // (LOGO, "assets/logo.png", "PNG", "Application logo"),
-    ],
-    [
-        // Text assets would reference real files:
-        // (README, "assets/README.md", "Application readme file"),
-        // (LICENSE, "assets/LICENSE", "Software license"),
-    ]
-);
 
 /// Utility functions for working with assets
 pub mod utils {
