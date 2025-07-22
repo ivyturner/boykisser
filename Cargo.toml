@@ -1,0 +1,18 @@
+[package]
+name = "boykisser"
+version = "1.0.0"
+edition = "2024"
+repository = "https://github.com/ofluffydev/boykisser"
+keywords = ["ascii", "art", "boykisser", "compile-time", "images"]
+categories = ["art"]
+description = "A collection of compile time ASCII art and images, especially boykisser."
+license = "MIT OR Apache-2.0"
+
+[features]
+default = ["rust", "kissers", "art"]
+rust = ["art"]
+kissers = ["art"]
+art = []
+
+[dependencies]
+paste = "1.0.15"
