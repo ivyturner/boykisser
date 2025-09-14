@@ -23,7 +23,7 @@
 //! use boykisser::*;
 //!
 //! // Access built-in boykisser ASCII art (if the `art` feature is enabled)
-//! let ascii = art::boykisser::BOYKISSER;
+//! let ascii = art::kissers::BOYKISSER;
 //! println!("{}", ascii);
 //!
 //! // Access a built-in image
